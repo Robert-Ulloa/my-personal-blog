@@ -1,0 +1,41 @@
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #2f3542;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .form-page {
+    background-color: #2f3542;
+  }
+  
+  body.dark-mode .form-container {
+    background-color: #57606f;
+  }
+  
+  body.dark-mode .text-primary {
+    color: #ffa502 !important;
+  }
+  
+  body.dark-mode .form-label {
+    color: #ffa502;
+  }
+  
+  body.dark-mode .form-control {
+    background-color: #57606f;
+    border: 2px solid #ffa502;
+    color: #ffa502;
+  }
+  
+  body.dark-mode .form-control:focus {
+    border-color: #ff6348;
+  }
+  
+  body.dark-mode .btn-success {
+    background-color: #ffa502;
+    border-color: #ffa502;
+  }
+  
+  body.dark-mode .btn-success:hover {
+    background-color: #ff6348;
+    border-color: #ff6348;
+  }
