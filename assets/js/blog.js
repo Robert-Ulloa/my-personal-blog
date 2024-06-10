@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     posts.forEach(post => {
       const postElement = document.createElement('div');
+      postElement.classList.add('post');
       postElement.innerHTML = `<h2>${post.title}</h2><p>${post.content}</p><p><em>by ${post.username}</em></p>`;
       postsContainer.appendChild(postElement);
     });

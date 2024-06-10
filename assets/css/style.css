@@ -12,7 +12,7 @@ footer {
 }
 
 body {
-    font-family: 'times', serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: rgb(22, 7, 79);
     color: var(--text-color);
     margin: 0;
@@ -85,7 +85,7 @@ main {
 }
 
 .btn:hover {
-    background-color: #3e52ff;
+    background-color: #0d24f7;
 }
 
 #content {

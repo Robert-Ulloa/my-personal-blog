@@ -1,41 +1,102 @@
+/* General styling */
+
+header, footer {
+  background-color: rgb(4, 4, 46);
+  border-bottom: 1px solid;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #e9e8ef;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header .title {
+  display: inline-block;
+  margin: 0;
+}
+
+header #modeToggle {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #0056b3;
+}
+
+header #backButton {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: auto;
+}
+
+body {
+  font-family: 'times', serif;
+  background-color: rgb(247, 246, 248);
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  padding: 2rem;
+}
+
+/* Post styling */
+
+#posts .post {
+  padding: 3rem;
+  border-radius: 15px;
+  border: 10px solid #cccccc4f;
+  margin-bottom: 2rem;
+}
+
+#posts .post:nth-child(odd) {
+  background-color: #d4dde6;
+}
+
+#posts .post:nth-child(even) {
+  background-color: #e8e9f6;
+}
+
 /* Dark mode styles */
+
 body.dark-mode {
-    background-color: #2f3542;
-    color: #ffffff;
-  }
-  
-  body.dark-mode .form-page {
-    background-color: #2f3542;
-  }
-  
-  body.dark-mode .form-container {
-    background-color: #57606f;
-  }
-  
-  body.dark-mode .text-primary {
-    color: #ffa502 !important;
-  }
-  
-  body.dark-mode .form-label {
-    color: #ffa502;
-  }
-  
-  body.dark-mode .form-control {
-    background-color: #57606f;
-    border: 2px solid #ffa502;
-    color: #ffa502;
-  }
-  
-  body.dark-mode .form-control:focus {
-    border-color: #ff6348;
-  }
-  
-  body.dark-mode .btn-success {
-    background-color: #ffa502;
-    border-color: #ffa502;
-  }
-  
-  body.dark-mode .btn-success:hover {
-    background-color: #ff6348;
-    border-color: #ff6348;
-  }
+  background-color: #0e1c3a;
+  color: #ffffff;
+}
+
+body.dark-mode .post {
+  background-color: #27243c;
+  color: #ffffff;
+}
+
+body.dark-mode #posts .post:nth-child(odd) {
+  background-color: #150750;
+}
+
+body.dark-mode #posts .post:nth-child(even) {
+  background-color: #0e0528;
+}
